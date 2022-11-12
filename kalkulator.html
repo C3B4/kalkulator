@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Projekt kalkulatora</title>
+    </head>
+    <body>
+        <script>
+            function dodawanie() {
+                var liczba1 = Number(document.getElementById("liczba1").value)
+                var liczba2 = Number(document.getElementById("liczba2").value)
+                var wynik = liczba1 + liczba2
+                document.getElementById("wynik").innerHTML = wynik
+            }
+
+            function odejmowanie() {
+                var liczba1 = Number(document.getElementById("liczba1").value)
+                var liczba2 = Number(document.getElementById("liczba2").value)
+                var wynik = liczba1-liczba2
+                document.getElementById("wynik").innerHTML = wynik
+            }
+
+            function mnozenie() {
+                var liczba1 = Number(document.getElementById("liczba1").value)
+                var liczba2 = Number(document.getElementById("liczba2").value)
+                var wynik = liczba1 * liczba2
+                document.getElementById("wynik").innerHTML = wynik
+            }
+
+            function dzielenie() {
+                var liczba1 = Number(document.getElementById("liczba1").value)
+                var liczba2 = Number(document.getElementById("liczba2").value)
+                var wynik = liczba1 / liczba2
+                document.getElementById("wynik").innerHTML = wynik
+            }
+        </script>
+        <input type="text" id="liczba1">
+        <input type="text" id="liczba2">
+
+        <button onclick="dodawanie()">+</button>
+        <button onclick="odejmowanie()">-</button>
+        <button onclick="mnozenie()">*</button>
+        <button onclick="dzielenie()">/</button>
+
+        <div id="wynik"/>
+    </body>
+</html>
